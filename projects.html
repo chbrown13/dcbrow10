@@ -9,7 +9,16 @@
 	<!--Font Awesome icons-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-
+	<style>
+			ul lim::before {
+				content: "\2022";
+				color: black;
+				font-weight: bold;
+				display: inline-block; 
+				width: 1em;
+				margin-left: -1em;
+				}
+		</style>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -47,8 +56,10 @@
 
 		<div class="container bs-docs-container">
 			<div class="col-md-10 col-md-offset-1">
-        <a name="misc"></a>
-				Cool and interesting programming projects I've worked on:
+		<a name="misc"></a>
+		<ul>
+			<li><b>A selection of various open source, industry, hackathon, research, and class programming projects I've had the opportunity to work on and contribute to:</b>			</li>
+		</ul>
 
 				<table style="width:100%">
 				<tr>
@@ -62,27 +73,26 @@
 				<tr>
 					<td valign="top">
 						<ul>
-							<li><b>Red Hat:</b></li>
+							<lim><b>Red Hat:</b></lim>
 							<ul>
 								<li><a href="https://github.com/SatelliteQE/ansible-satellite6"><u><b>ansible-satellite6</b></u></a></li>
 								<li><a href="https://github.com/SatelliteQE/automation-tools"><u><b>automation-tools</u></a></b></li>
 								<li><a href="https://github.com/SatelliteQE/robottelo"><u><b>robottelo</u></a></b></li>
 								<li><a href="https://github.com/SatelliteQE/satellite-populate"><u><b>satellite-populate</u></a></b></li>
 							</ul>
-							<li><b>Ansible: <a href="https://github.com/ansible/ansible"><u>ansible</u></a></b></li>
-							<li><b>Katello: <a href="https://github.com/Katello/katello"><u>katello</u></a></b></li>
-							<li><b>Tago: <a href="https://github.com/tago-io/tago-sdk-python"><u>Python SDK</u></a> 
-								(CSC517)</b></li>
+							<lim><b>Ansible: <a href="https://github.com/ansible/ansible"><u>ansible</u></a></b></lim><br>
+							<lim><b>Katello: <a href="https://github.com/Katello/katello"><u>katello</u></a></b></lim><br>
+							<lim><b>Tago: <a href="https://github.com/tago-io/tago-sdk-python"><u>Python SDK</u></a></b></lim>
 						</ul>
 					</td>
 					<td valign="top">
 						<ul>
-							<li><b>Blackbaud:</b></li>
+							<lim><b>Blackbaud:</b></lim>
 							<ul>
 								<li><a href="https://www.blackbaud.com/files/support/helpfiles/OnlineExpress/online-help/Content/HelpTopics/donations-givalanche.html"><u><b>Givalanche</u></a></b></li>
 								<li><a href="https://www.blackbaud.com/online-marketing/online-express"><u><b>Online Express</u></a></b></li>
 							</ul>
-							<li><b>Bank of America: Manual Adjustment Tool</b></li>
+							<lim><b>Bank of America: Manual Adjustment Tool</b></lim>
 						</ul>
 					</td>
 
@@ -141,10 +151,9 @@
 				</ul>
 				
 				<a name="classes"></a>
-				<u><h3>Class Projects</h3></u>
-				Selected programming assignments from computer science courses
+				<u><h3>CS Courses</h3></u>
 				<ul>
-					<li><b>Object-Oriented Design and Development (CSC517)</b></li>
+					<lim><b>Object-Oriented Design and Development (CSC517)</b></lim>
 					<ul>
 						<li><i>Tago Python SDK</i></li>
 						<p><a href="https://tago.io/" target="_blank">Tago</a> is a cloud platform that allows users 
@@ -164,7 +173,7 @@
 						<br><a href="https://github.com/chbrown13/servo-dependency-tool">Source Code</a>
 						<br><a href="https://www.youtube.com/watch?v=-xS-6JY2o_o">Demo Video</a></p>
 					</ul>
-					<li><b>Human-Computer Interaction (CSC554)</b></li>
+					<lim><b>Human-Computer Interaction (CSC554)</b></lim>
 					<ul>
 						<li><i>WildSnap</i></li>
 						<p>WildSnap is a proof of concept for an Android app that allows users to identify various 
@@ -179,10 +188,12 @@
 				<a name="research"></a>
 				<u><h3>Research</h3></u>
 				<ul>
-					<li><b><a href="https://github.com/chbrown13/seev-brightness"><u>SEEV Image Brightness</u></a></b></li>
-					<li><b><a href="https://github.com/chbrown13/PullRecommender"><u>tool-recommender-bot</u></a></b></li>
-					<li><b><a href="https://github.com/chbrown13/auto-grader"><u>auto-grader</u></a></b></li>
-					<li><b><a href="https://github.com/DeveloperLiberationFront/Program-Navigation-Plugin"><u>Flower</u></a></b></li>
+					<li><b><a href="https://github.com/chbrown13/nudge-bot"><u>nudge-bot:</u></a></b> Software bot to recommend beneficial developer behaviors to software engineering students on projects</li>
+					<li><b><a href="https://github.com/chbrown13/suggestions"><u>suggestions:</u></a></b> Script to monitor and analyze the suggested changes feature on GitHub</li>
+					<li><b><a href="https://github.com/chbrown13/tool-recommender-bot/tree/pulls"><u>tool-recommender-bot:</u></a></b> Software bot to recommend and add static analysis tools with automated pull requests</li>
+					<li><b><a href="https://github.com/chbrown13/auto-grader"><u>auto-grader:</u></a></b> Script to automatically grade assignments based on bug patches</li>
+					<li><b><a href="https://github.com/chbrown13/seev-brightness"><u>SEEV:</u></a></b> Script to calculate the average brightness for different sections of images</li>
+					<li><b><a href="https://github.com/DeveloperLiberationFront/Program-Navigation-Plugin"><u>Flower:</u></a></b> Eclipse code navigation plugin</li>
 				</ul>
 				
 				<a name="communities"></a>
