@@ -58,56 +58,63 @@
 		<div class="container bs-docs-container">
 			<div class="col-md-10 col-md-offset-1">
 			<a name="research"></a>
-			<p><b>My research interests and experiences span a variety of topics in computer science including including <em>software engineering</em>, <em>behavioral science</em>, <em>automated recommender systems</em>, <em>computer science education</em>, and more. Here is a featured selection of projects:
+			<p><b>My <a href="files/research.pdf">research philosophy</a> is to characterize software engineering problems and develop tools and techniques to solve these problems. My work lies in the intersection of <em>empirical software engineering</em>, <em>human factors</em>, and <em>automation and development tools</em>. Here is a featured selection of research projects:
 			</b></p>
-				  
-				<a name="dissertation"></a>
-				<h4>Doctoral Research</h4>
 
-				<a name="bot_recommendation"></a>
-				<h3>Bot Recommendations</h3>
+			<h4>Dissertation Research</h4>
+				  
+				<a name="framework"></a>
+				<h3><em>Analyzing Existing Systems</em></h3>
 				<table>
 					<tr>
-						<td style="width: 150px;"><img src="files/img/sorry.jpg" width="125" height="125"></td>
+						<td style="width: 150px;"><img src="files/img/github.png" width="125" height="125"></td>
 						<td></td>
 						<td>
-							<p> Software bots are useful for automating a variety of programming tasks efficiently and effectively. However, these systems are often ineffective for interacting with humans. To identify and evaluate a baseline approach for automated development tool recommendations from a bot, we implemented the naive <em>telemarketer design</em> that, like a telemarketer, sends static and socially inept recommendations with generic messages. We found that this approach was ineffective for recommending static analysis tools to developers and provide implications for improving the design of future recommendation bots.</p></td>
+							<p>To determine if developer recommendation choice architectures can improve recommendations to software engineers, I first examined the GitHub <em>suggested changes</em> feature, a system that incorporates all of the developer recommendation choice architectures. This feature allows reviewers to make specific recommendations on lines of code to improve pull requests during reviews, and lets developers automatically apply, reject, or edit changes. To analyze suggested changes through the lens of my framework, I conducted two studies comparing different styles of automated tool recommendations and exploring its impact on developers and pull requests on GitHub.</td>
+					</tr>
+					
+				</table>
+					<ul>
+						<lim><a href="files/nudge/suggestions.pdf" target="_blank"><em>Understanding the Impact of GitHub Suggested Changes on Recommendations Between Developers</em></a></lim><br>
+						<lim><a href="https://github.com/chbrown13/suggestions">Source Code</a></lim>
+					</ul>
+					<ul>
+						<lim><a href="files/nudge/chase.pdf" target="_blank"><em>Comparing Different Developer Behavior Recommendation Styles</em></a></lim>
+					</ul>
+				
+				<a name="framework"></a>
+				<h3><em>Developer Recommendation Choice Architectures</em></h3>
+				<table>
+					<tr>
+						<td style="width: 150px;"><img src="files/img/actionability.png" width="62" height="55"><img src="files/img/feedback.png" width="62" height="62"><img src="files/img/spatial.png" width="62" height="55"><img src="files/img/temporal.png" width="62" height="62"></td>
+						<td></td>
+						<td>
+							<p>To improve the decision-making of developers, my work incorporates concepts from behavioral science. <em>Nudge theory</em> seeks to improve human behavior by influencing the environment surrounding decisions, or <em>choice architecture</em> <small>[Thaler, 2008]</small>. In this work, I introduce <b><em>developer recommendation choice architectures</em></b>, a framework for designing automated recommendations to nudge developers towards better behaviors and practices: 1) <b>actionability</b>, the ease with which developers can adopt target behaviors; 2) <b>feedback</b>, the clarity and relevance of the information; and 3) <b>locality</b>, the placement and timing of recommendations. My preliminary evaluation explores actionable recommendations.</td>
+					</tr>
+					
+				</table>
+					<ul>
+						<lim><a href="files/nudge/botse2020.pdf" target="_blank"><em>Sorry to Bother You Again:  Developer Recommendation Choice Architectures for Designing Effective Bots</em></a></lim>
+					</ul>
+
+
+                <a name="recommendations"></a>
+				<h3>Effective Developer Recommendations</h3>
+				<table>
+					<tr>
+						<td style="width: 150px;"><img src="files/img/peer.png" width="62" height="70"><img src="files/img/sorry.jpg" width="65" height="65"></td>
+						<td><p>To develop tools and techniques for improving developer decision-making, I first explore what makes an effective recommendation. Research shows that <em>peer interactions</em>, or the process of discovering tools from colleagues during normal work activities, is the most effective mode of tool discovery <small>[Murphy-Hill, 2011]</small>. Additionally, I developed the naive <em>telemarketer design</em>, a baseline approach for automating developer recommendations with bots. My preliminary work investigates what makes each of these methods effective or ineffective for learning about new development tools.</td>
 					</tr>
 				</table>
 				<ul>
-					<lim><a href="files/nudge/BotSE.pdf" target="_blank"><em>Sorry to Bother You: Designing Bots for Effective Recommendations</em></a></li><br>
-					<lim><a href="https://github.com/tool-recommender-bot">tool-recommender-bot</a></lim><br>	
-					<lim><a href="https://github.com/chbrown13/tool-recommender-bot/tree/pulls" target="_blank">Source Code</a></li><br>
-					
-					
+					<lim><a href="files/nudge/BotSE.pdf" target="_blank"><em>Sorry to Bother You: Designing Bots for Effective Recommendations</em></a></lim><br>
+					<lim><a href="https://github.com/chbrown13/tool-recommender-bot/tree/pulls" target="_blank">tool-recommender-bot</a></lim><br>
 				</ul>
-
-                <a name="peer_recommendation"></a>
-				<h3>Peer Interactions</h3>
-				<table>
-					<tr>
-						<td style="width: 150px;"><img src="files/img/peer.png" width="125" height="135"></td>
-						<td><p>Software contains many different tools and features with a variety of functionality to help users increase productivity by saving time and effort, however users have limited knowledge of these features. Research shows that <em>peer interactions</em>, the process of software engineers discovering tools from colleagues during normal work activities, is the most effective mode of tool discovery. This research investigates what makes face-to-face in-person recommendations effective for learning about new development tools. We found that the <em>receptiveness</em> is a key characteristic for successful tool recommendations with peer interactions.</p></td>
-					</tr>
-				</table>
 				<ul>
 					<lim><a href="files/peer-interaction/vlhcc17.pdf" target="_blank"><em>How Software Users Recommend Tools to Each Other</em></a></li>	<br><lim><a href="files/peer-interaction/study.html" target="_blank">Study Materials</a></li>
 				</ul>
 
-				<h4>Graduate Research</h4>
-				<a name="auto_grader"></a>
-				<h3>Automated Program Repair</h3>
-				<table>
-					<tr>
-						<td style="width: 150px;"><img src="files/img/grade.png" width="128" height="125"></td>
-						<td><p>Computer science education faces a unique problem where enrollment in introductory courses is drastically increasing while the field's retention rate is decreasing. Programming assignments and grades play a major role students losing interest in the major. This project studies using concepts from automated program repair to improve CS education by providing valuable feedback and automatically grading assignments for beginner programmers. The results suggest our patch grading algorithm is effective for improving grades on introductory coding assignments.</p>
-						</td>
-					</tr>
-				</table>
-                <ul>
-					<lim><a href="files/auto-program-repair/grader.pdf"><em>Analyzing the Impact of Patches in Computer Science Education</em></a></li><br>
-					<lim><a href="https://github.com/chbrown13/auto-grader">Source Code</a></li>											
-				</ul>
+				<h4>Other Graduate Research</h4>
 
                 <a name="flower"></a>
 				<h3>Program Navigation</h3>
@@ -122,6 +129,20 @@
 					<lim><a href="https://drive.google.com/file/d/0B384dHeXAHG5MmJaUnNZSlBRTEU/view?usp=sharing">Demo Video</a></lim><br>
 					<lim><a href="https://jssmith1.github.io/projects/1_project/" target="_blank">Study Materials</a></lim><br>
 					<lim><a href="https://github.com/DeveloperLiberationFront/Program-Navigation-Plugin" target="_blank">Source Code</a></lim>					
+				</ul>
+
+				<a name="auto_grader"></a>
+				<h3>Automated Program Repair</h3>
+				<table>
+					<tr>
+						<td style="width: 150px;"><img src="files/img/grade.png" width="128" height="125"></td>
+						<td><p>Computer science education faces a unique problem where enrollment in introductory courses is drastically increasing while the field's retention rate is decreasing. Programming assignments and grades play a major role students losing interest in the major. This project studies using concepts from automated program repair to improve CS education by providing valuable feedback and automatically grading assignments for beginner programmers. The results suggest our patch grading algorithm is effective for improving grades on introductory coding assignments.</p>
+						</td>
+					</tr>
+				</table>
+                <ul>
+					<lim><a href="files/auto-program-repair/grader.pdf"><em>Analyzing the Impact of Patches in Computer Science Education</em></a></li><br>
+					<lim><a href="https://github.com/chbrown13/auto-grader">Source Code</a></li>											
 				</ul>
 
                 <a name="undergrad"></a>
